@@ -51,7 +51,7 @@ const store = configureStore();
 // const state_v = store.getState();
 // const visibleExpenses = getVisibleExpenses(state_v.expenses, state_v.filters);
 // console.log(visibleExpenses);
-
+console.log("test");
 const jsx = (
   <Provider store={store}>
     <AppRouter />
