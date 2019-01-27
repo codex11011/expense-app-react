@@ -22,8 +22,6 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.0",
     "express": "^4.16.4",
-    "jest": "^23.6.0",
-    "live-server": "^1.2.0",
     "mini-css-extract-plugin": "^0.5.0",
     "moment": "2.18.1",
     "node-sass": "^4.9.3",
@@ -40,11 +38,14 @@
     "style-loader": "^0.22.1",
     "uuid": "^3.3.2",
     "validator": "8.0.0",
-    "webpack": "^4.16.5",
-    "webpack-dev-server": "^3.1.5"
+    "webpack": "^4.16.5"
   },
   "devDependencies": {
-    "webpack-cli": "^3.1.0"
+    "chalk": "^2.4.2",
+    "webpack-cli": "^3.1.0",
+    "jest": "^23.6.0",
+    "live-server": "^1.2.0",
+    "webpack-dev-server": "^3.1.5"
   },
   "author": "Voldemort",
   "license": "ISC"
