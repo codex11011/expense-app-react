@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
-// import { addExpense } from "./actions/expenses";
+import { startSetExpenses } from "./actions/expenses";
 // import { editExpense } from "./actions/expenses";
 // import { removeExpense } from "./actions/expenses";
-// import { setTextFilter } from "./actions/filters";
+import { setTextFilter } from "./actions/filters";
 // import { sortByDate } from "./actions/filters";
 // import { sortByAmount } from "./actions/filters";
 // import { setStartDate } from "./actions/filters";
@@ -53,10 +53,15 @@ const store = configureStore();
 // const visibleExpenses = getVisibleExpenses(state_v.expenses, state_v.filters);
 // console.log(visibleExpenses);
 // console.log("test");
+
 const jsx = (
   <Provider store={store}>
     <AppRouter />
   </Provider>
 );
 
-ReactDOM.render(jsx, document.getElementById("app"));
+ReactDOM.render(<p>loading...</p>, document.getElementById("app"));
+
+store.dispatch(startSetExpenses()).then(() => {
+  ReactDOM.render(jsx, document.getElementById("app"));
+});

@@ -9,14 +9,13 @@ export default (state = expenseReducer_default_state, action) => {
     case "Edit_Expense":
       return state.map(expense => {
         if (expense.id === action.id) {
-          return {
-            ...expense,
-            ...action.updates
-          };
+          return { ...expense, ...action.updates };
         } else {
           return expense;
         }
       });
+    case "Set_Expenses":
+      return action.expenses;
     default:
       return state;
   }
