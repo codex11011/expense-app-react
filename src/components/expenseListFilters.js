@@ -10,7 +10,8 @@ import {
 import { DateRangePicker } from "react-dates";
 class ExpenseListFilters extends React.Component {
   state = {
-    calendarFocused: null
+    calendarFocused: null,
+    amount: 0
   };
   onDatesChange = ({ startDate, endDate }) => {
     this.props.dispatch(setStartDate(startDate));
