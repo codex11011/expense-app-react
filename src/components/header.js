@@ -7,7 +7,7 @@ const Header = ({ startLogout }) => (
   <header>
     <h1>chk-Expense</h1>
 
-    <NavLink to="/dashboard" exact={true} activeClassName="isactive">
+    <NavLink to="/dashboard" activeClassName="isactive">
       DashBoard
     </NavLink>
     <NavLink to="/create" exact={true} activeClassName="isactive">
