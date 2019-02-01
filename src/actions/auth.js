@@ -16,6 +16,17 @@ export const logout = () => ({
 
 export const startLogout = () => {
   return () => {
-    return firebase.auth().signOut();
+    return firebase
+      .auth()
+      .signOut()
+      .then(() => {
+        sessionStorage.removeItem("tokenK");
+        sessionStorage.removeItem("displayName");
+        sessionStorage.removeItem("userName");
+        window.open("index.html", "_self");
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
   };
 };
