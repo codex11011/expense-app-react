@@ -4,7 +4,7 @@ import ExpenseListFilters from "../components/expenseListFilters";
 import ExpensesSummary from "./expensesSummary";
 const ExpenseDashboard = () => (
   <div>
-    <div>
+    <div className="dashboard">
       <ExpensesSummary />
       <ExpenseListFilters />
     </div>
