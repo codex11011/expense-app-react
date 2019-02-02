@@ -22,8 +22,6 @@
     display: flex;
     border-radius: 5px;
     justify-content: space-between;
-    @media (max-width: $desktop-breakpoint) {
-    }
   }
 }
 
@@ -31,6 +29,8 @@
   font-size: 1.5rem;
   letter-spacing: 0.06em;
   font-weight: 300;
+  padding: 7px;
+
   margin: 0;
   span {
     font-weight: 800;
